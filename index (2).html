@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	   <!-- Bootstrap CSS -->
+  <!--  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+	<!-- custom css link -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>slider</title>
+</head>
+<body>
+
+
+	<section id="testmonial">
+		<h1>see what our member are saying</h1>
+		 <div class="container">
+		 	<!--slider desing -->
+		 	<div class="testmonial">
+		 		<div class="slide-row" id="slide">
+
+		 			<div class="slide-col">
+		 				<div class="user-text">
+		 					<p class="content">“I’ve learned a positively immeasurable amount of things from Timbaland and Natalie Portman. It gave me this sense of possibility. Like I can actually do it. I can get a Billboard hit single, and it’s not that far away.”</p>
+		 					<h5>Robert</h5>
+		 					<p>Entertainer, USA</p>
+		 				</div>
+		 				<div class="user-img">
+		 					<img src="img/user.png">
+		 				</div>
+		 			</div>
+
+		 			<div class="slide-col">
+		 				<div class="user-text">
+		 					<p>“I’ve learned a positively immeasurable amount of things from Timbaland and Natalie Portman. It gave me this sense of possibility. Like I can actually do it. I can get a Billboard hit single, and it’s not that far away.”</p>
+		 					<h5>Robert</h5>
+		 					<p>Entertainer, USA</p>
+		 				</div>
+		 				<div class="user-img">
+		 					<img src="img/user1.png">
+		 				</div>
+		 			</div>
+
+		 			<div class="slide-col">
+		 				<div class="user-text">
+		 					<p>“I’ve learned a positively immeasurable amount of things from Timbaland and Natalie Portman. It gave me this sense of possibility. Like I can actually do it. I can get a Billboard hit single, and it’s not that far away.”</p>
+		 					<h5>Robert</h5>
+		 					<p>Entertainer, USA</p>
+		 				</div>
+		 				<div class="user-img">
+		 					<img src="img/user2.png">
+		 				</div>
+		 			</div>
+
+		 			<div class="slide-col">
+		 				<div class="user-text">
+		 					<p>“I’ve learned a positively immeasurable amount of things from Timbaland and Natalie Portman. It gave me this sense of possibility. Like I can actually do it. I can get a Billboard hit single, and it’s not that far away.”</p>
+		 					<h5>Robert</h5>
+		 					<p>Entertainer, USA</p>
+		 				</div>
+		 				<div class="user-img">
+		 					<img src="img/user3.png">
+		 				</div>
+		 			</div>
+
+		 		</div>
+		 	</div>
+		 	<!-- pagination dots or indicator -->
+		 	<div class="pagination">
+		 		<span class="dots active"></span>
+		 		<span class="dots"></span>
+		 		<span class="dots"></span>
+		 		<span class="dots"></span>
+
+		 	</div>
+		 </div>
+	</section>
+
+
+
+
+ 
+
+
+
+
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+
+<script>
+	
+
+	var btn       = document.getElementsByClassName('dots');
+	var allslides =  document.getElementById('slide');
+
+
+	btn[0].onclick =  function (){
+		allslides.style.transform = "translateX(0px)";
+		allslides.style.transition = "0.5s";
+
+		for (var i=0; i<4; i++){
+			btn[i].classList.remove('active');
+		}
+		
+		this.classList.add('active');
+		
+	}
+
+
+
+	btn[1].onclick =  function (){
+		allslides.style.transform = "translateX(-800px)";
+		allslides.style.transition = "0.5s";
+
+		for (var i=0; i<4; i++){
+			btn[i].classList.remove('active');
+		}
+		this.classList.add('active');
+		
+	}
+
+
+
+	btn[2].onclick =  function (){
+		allslides.style.transform = "translateX(-1600px)";
+		allslides.style.transition = "0.5s";
+
+		for (var i=0; i<4; i++){
+			btn[i].classList.remove('active');
+		}
+		this.classList.add('active');
+		
+	}
+
+
+
+	btn[3].onclick =  function (){
+		allslides.style.transform = "translateX(-2400px)";
+		allslides.style.transition = "0.5s";
+
+		for (var i=0; i<4; i++){
+			btn[i].classList.remove('active');
+		}
+		this.classList.add('active');
+		
+	}
+
+
+</script>
+
+</body>
+</html>

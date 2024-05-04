@@ -1,0 +1,101 @@
+/***************slider code**************/
+body{
+	width: 100%;
+	height: 100vh;
+	background: #000;
+}
+
+#testmonial{
+	width: 100%;
+	padding: 120px 0px;
+
+}
+#testmonial h1{
+	font-size: 32px;
+	margin-bottom: 64px;
+	font-weight: 600;
+	color: white;
+	text-align: center;
+}
+
+.slide-row{
+	width: 3200px;
+	display: flex;
+
+}
+.slide-col{
+	width: 800px;
+	height: 400px;
+	position: relative;
+}
+.user-img{
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+}
+.user-img img{
+	height: 100%;
+	border-radius: 3px;
+
+}
+.user-text{
+	background: #272c33;
+	width: 480px;
+	height: 230px;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #fefefe;
+	border-radius: 8px;
+	padding: 40px;
+	z-index: 5;
+
+
+}
+.user-text .content{
+	font-size: 20px;
+	line-height: 26px;
+}
+.user-text h5{
+	color: white;
+	font-size: 26px;
+	margin: 35px 0px 5px;
+}
+.container{
+	width:800px ;
+	height: 400px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+} 
+.testmonial{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.dots{
+	height: 8px;
+	width: 16px;
+	border-radius:5px;
+	background: white;
+	display: inline-block;
+	cursor: pointer;
+
+}
+.pagination{
+	position: absolute;
+	left: 50%;
+	transform: translateY(-50%);
+	bottom: -60px;
+}
+.dots:hover{
+	background: tomato;
+}
+.active{
+	width: 30px;
+}
